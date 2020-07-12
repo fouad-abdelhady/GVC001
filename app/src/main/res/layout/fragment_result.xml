@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.Result">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/result_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        app:defaultQueryHint="Find verb conjugation"
+        app:iconifiedByDefault="false" />
+
+    <LinearLayout
+        android:id="@+id/result_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/result_verb_infinitive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Fahren"
+                    android:textColor="@color/border_color"
+                    android:textSize="41dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/result_auxverb_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Auxiliary Verb"
+                        android:textColor="#464646"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:id="@+id/result_auxverb_infinitive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Sein"
+                        android:textColor="@color/border_color"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/result_verb_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Regular"
+                    android:textColor="#464646"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/result_tense_prasens"
+                        style="@style/tences_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:text="Präsens" />
+
+                    <TextView
+                        android:id="@+id/result_tense_prateritum"
+                        style="@style/tences_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:text="Präteritum" />
+
+                    <TextView
+                        android:id="@+id/result_tense_perfekt"
+                        style="@style/tences_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:text="Perfekt" />
+
+                    <TextView
+                        android:id="@+id/result_tense_plusquamperfekt"
+                        style="@style/tences_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:text="Plusquamperfekt" />
+
+                    <TextView
+                        android:id="@+id/result_tense_futurei"
+                        style="@style/tences_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:text="Future I" />
+
+                    <TextView
+                        android:id="@+id/result_tense_futureii"
+                        style="@style/tences_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:text="Future II" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="left"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/result_pronouns"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                style="@style/verbconjugation_style">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ich"
+                    style="@style/verbconjugation_pronuns_style"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Du"
+                    style="@style/verbconjugation_pronuns_style"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Er"
+                    style="@style/verbconjugation_pronuns_style"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wir"
+                    style="@style/verbconjugation_pronuns_style"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ihr"
+                    style="@style/verbconjugation_pronuns_style"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sie"
+                    style="@style/verbconjugation_pronuns_style"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/result_auxverb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                style="@style/verbconjugation_style"
+                >
+
+                <TextView
+                    android:id="@+id/result_auxverb_ich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="werde"
+                    style="@style/verbconjugation_auxverbi_style"/>
+                <TextView
+                    android:id="@+id/result_auxverb_du"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="wirst"
+                    style="@style/verbconjugation_auxverbi_style"/>
+                <TextView
+                    android:id="@+id/result_auxverb_er"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="wird"
+                    style="@style/verbconjugation_auxverbi_style"/>
+                <TextView
+                    android:id="@+id/result_auxverb_wir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="werden"
+                    style="@style/verbconjugation_auxverbi_style"/>
+                <TextView
+                    android:id="@+id/result_auxverb_ihr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="werdet"
+                    style="@style/verbconjugation_auxverbi_style"/>
+                <TextView
+                    android:id="@+id/result_auxverb_sie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="werden"
+                    style="@style/verbconjugation_auxverbi_style"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/result_conjugated_verb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/result_verb_ich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gefahren"
+                    style="@style/verbconjugation_verb_style"/>
+                <TextView
+                    android:id="@+id/result_verb_du"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gefahren"
+                    style="@style/verbconjugation_verb_style"/>
+                <TextView
+                    android:id="@+id/result_verb_er"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gefahren"
+                    style="@style/verbconjugation_verb_style"/>
+                <TextView
+                    android:id="@+id/result_verb_wir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gefahren"
+                    style="@style/verbconjugation_verb_style"/>
+                <TextView
+                    android:id="@+id/result_verb_ihr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gefahren"
+                    style="@style/verbconjugation_verb_style"/>
+                <TextView
+                    android:id="@+id/result_verb_sie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gefahren"
+                    style="@style/verbconjugation_verb_style"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/result_futureii_auxverbii"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                style="@style/verbconjugation_style">
+
+                <TextView
+                    android:id="@+id/result_auxverbii_ich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sein"
+                    style="@style/verbconjugation_auxverbi_style"/>
+                <TextView
+                    android:id="@+id/result_auxverbii_du"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sein"
+                    style="@style/verbconjugation_auxverbi_style"/>
+                <TextView
+                    android:id="@+id/result_auxverbii_er"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sein"
+                    style="@style/verbconjugation_auxverbi_style"/>
+                <TextView
+                    android:id="@+id/result_auxverbii_wir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sein"
+                    style="@style/verbconjugation_auxverbi_style"/>
+                <TextView
+                    android:id="@+id/result_auxverbii_ihr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sein"
+                    style="@style/verbconjugation_auxverbi_style"/>
+                <TextView
+                    android:id="@+id/result_auxverbii_sie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sein"
+                    style="@style/verbconjugation_auxverbi_style"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/result_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

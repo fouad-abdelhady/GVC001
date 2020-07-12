@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GVCv000</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="home_item">Home</string>
+    <string name="translation_item">Translation</string>
+    <string name="history_item">History</string>
+    <string name="home_nav_bar_item">Home</string>
+    <string name="favourites_item">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="arabdict_notation">For more accurate translation we highly recommend using Arabdict dictionaries </string>
+    <string name="conjugation_edit_text_hint">Search a verb</string>
+</resources>
